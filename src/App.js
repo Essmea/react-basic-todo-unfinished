@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Todo from "./components/Todo"; //Vi importerar Todo komponenten så att vi kan använda den i vår html kod.
 
+//En komponent måste returnera något som är läsbart i browsern, exempelvis enkel Html kod.
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My Todos</h1>
+      <Todo text='Learn React'/>
+      <Todo text='Master React'/>
+      <Todo text='Learn React'/>
+      <Todo text='Master React'/>
+      <Todo text='Learn React'/>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App; //export för att göra den tillgänglig utanför denna specifika appen

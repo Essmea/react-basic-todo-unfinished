@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App'; //importerar App komponenten
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+//Render motod på vår ReactDom som vi importerat ovan. </App/> är ett html element, Html skriven i javascript kod kallas för jsx-kod.
+ReactDOM.render(<App />,document.getElementById('root')); //Vi vill rendera vår <App></App> komponent in i elementet med id 'root' som vi kan hitta i index.html i public foldern.
